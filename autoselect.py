@@ -19,7 +19,7 @@ def autoselect():
     driver.implicitly_wait(1)
     driver.get('https://fp.trafikverket.se/Boka/#/search/AtIIhtAaRmSph/5/0/0/0')
     time.sleep(3)
-    element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "col-xs-6")))
+    #element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "col-xs-6")))
     frame = driver.find_element_by_css_selector('#examination-type-select')
     time.sleep(0.8)
 
