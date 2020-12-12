@@ -19,7 +19,7 @@ def autoselect():
     print("Running Script....")
     driver.implicitly_wait(1)
     driver.get('https://fp.trafikverket.se/Boka/#/search/AtIIhtAaRmSph/5/0/0/0')
-    time.sleep(2)
+    time.sleep(3)
     frame = driver.find_element_by_css_selector('#examination-type-select')
     time.sleep(0.8)
 
@@ -64,6 +64,7 @@ def autoselect():
             return False
         else:
             print("No better time found\n")
+            time.sleep()
             return True
     except Exception as e:
         print(e)
