@@ -64,7 +64,7 @@ def autoselect():
             return False
         else:
             print("No better time found\n")
-            time.sleep()
+            time.sleep(500)
             return True
     except Exception as e:
         print(e)
